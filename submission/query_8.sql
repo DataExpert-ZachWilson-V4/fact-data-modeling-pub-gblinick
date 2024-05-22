@@ -12,7 +12,7 @@ WITH
     SELECT
       *
     FROM
-      daily_web_metrics
+      gblinick.daily_web_metrics
     WHERE
       DATE = DATE('2023-08-02')
   )

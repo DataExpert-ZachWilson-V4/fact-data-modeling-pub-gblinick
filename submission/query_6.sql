@@ -1,10 +1,10 @@
-INSERT INTO gblinick.hosts_cumulated
+INSERT INTO hosts_cumulated
   WITH
   yesterday AS (
     SELECT
       *
     FROM
-      gblinick.hosts_cumulated 
+      hosts_cumulated 
     WHERE
       DATE = DATE('2023-01-02')
   ),

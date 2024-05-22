@@ -5,14 +5,14 @@ This should look like the query to generate the cumulation table from the fact m
 */
 
 
-INSERT INTO gblinick.user_devices_cumulated
+INSERT INTO user_devices_cumulated
 
 WITH
   yesterday AS (
     SELECT
       *
     FROM
-      gblinick.user_devices_cumulated
+      user_devices_cumulated
     WHERE
       DATE = DATE('2022-12-31')
   ),

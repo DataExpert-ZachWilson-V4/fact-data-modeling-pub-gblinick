@@ -1,10 +1,10 @@
-INSERT INTO gblinick.host_activity_reduced
+INSERT INTO host_activity_reduced
 WITH
   yesterday AS (
     SELECT
       *
     FROM
-      gblinick.host_activity_reduced
+      host_activity_reduced
     WHERE
       month_start = '2023-08-01'
   ),
@@ -12,7 +12,7 @@ WITH
     SELECT
       *
     FROM
-      gblinick.daily_web_metrics
+      daily_web_metrics
     WHERE
       DATE = DATE('2023-08-02')
   )
